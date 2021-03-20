@@ -1,0 +1,38 @@
+{
+    "name": "hypatia/angle",
+    "type": "library",
+    "license": "MIT",
+    "description": "Angles implementation for Hypatia project.",
+    "keywords": [
+        "math",
+        "angle",
+        "dms",
+        "degree",
+        "radian",
+        "functional programming"
+    ],
+    "authors": [
+        {"name": "Michel Petit", "email": "contact@cogito-ergo-dev.fr"}
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "grrr-amsterdam/garp-functional": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypatia\\": "src/"
+        },
+        "files": [
+            "src/Angle/Functions.php",
+            "src/Angle/Dms/Functions.php",
+            "src/Angle/Rad/Functions.php",
+            "src/Angle/Deg/Functions.php",
+            "src/Angle/Gon/Functions.php",
+            "src/Angle/Turn/Functions.php"
+        ]
+
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.0"
+    }
+}
