@@ -6,7 +6,7 @@ abstract class Angle
 {
     protected float $value = 0.0;
 
-    public function __construct(float $angle)
+    public function __construct(float $angle = 0.0)
     {
         $this->value = $angle;
     }
