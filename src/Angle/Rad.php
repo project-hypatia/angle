@@ -18,4 +18,10 @@ class Rad extends Angle
     {
         return Rad\to_turn($this->value);
     }
+
+
+    public function __toString(): string
+    {
+        return $this->value . ' rad';
+    }
 }
