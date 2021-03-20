@@ -18,4 +18,10 @@ class Turn extends Angle
     {
         return Turn\to_gon($this->value);
     }
+
+
+    public function __toString(): string
+    {
+        return $this->value . ' tr';
+    }
 }
