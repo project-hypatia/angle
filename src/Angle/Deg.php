@@ -4,18 +4,24 @@ namespace Hypatia\Angle;
 
 class Deg extends Angle
 {
-    function toGon(): float
+    function toGon(): Gon
     {
-        return Deg\to_gon($this->value);
+        return new Gon(Deg\to_gon($this->value));
     }
 
-    function toRad(): float
+    function toRad(): Rad
     {
-        return Deg\to_rad($this->value);
+        return new Rad(Deg\to_rad($this->value));
     }
 
-    function toTurn(): float
+    function toTurn(): Turn
     {
-        return Deg\to_turn($this->value);
+        return new Turn(Deg\to_turn($this->value));
+    }
+
+    // TODO
+    function toDms()
+    {
+
     }
 }
