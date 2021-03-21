@@ -81,6 +81,7 @@ function are_suplementary(float $deg1, float $deg2): bool
 const to_turn   = '\Hypatia\Angle\Deg\to_turn';
 const to_gon    = '\Hypatia\Angle\Deg\to_gon';
 const to_rad    = '\Hypatia\Angle\Deg\to_rad';
+const to_dms    = '\Hypatia\Angle\Deg\to_dms';
 
 const is_right      = '\Hypatia\Angle\Deg\is_right';
 const is_straight   = '\Hypatia\Angle\Deg\is_straight';
