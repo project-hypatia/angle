@@ -4,7 +4,7 @@ use Hypatia\Angle\Deg;
 
 
 
-test('Call is_right as constant should success')->skip('to do');
+
 test('Call is_straight as constant should success')->skip('to do');
 test('Call is_perigon as constant should success')->skip('to do');
 

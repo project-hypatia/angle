@@ -26,8 +26,9 @@
             "src/Angle/Functions.php",
             "src/Angle/Dms/Functions.php",
             "src/Angle/Rad/Functions.php",
-            "src/Angle/Deg/Functions.php",
             "src/Angle/Deg/Converter/Functions.php",
+            "src/Angle/Deg/Unary/Functions.php",
+            "src/Angle/Deg/Binary/Functions.php",
             "src/Angle/Gon/Functions.php",
             "src/Angle/Turn/Functions.php"
         ]
