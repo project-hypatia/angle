@@ -24,7 +24,7 @@ function to_turn(float $deg): float
     return $deg / 360.0;
 }
 
-function to_dms (float $deg): CDms
+function to_dms (float $deg): array
 {
     $adeg = abs($deg);
 
@@ -32,11 +32,11 @@ function to_dms (float $deg): CDms
     $mo = compute_from_rest(end($do));
     $s  = end($mo);
 
-    return new Dms(
+    return [
         $deg < 0 ? -1 * reset($do) : reset($do),
         reset($mo),
         $s
-    );
+    ];
 }
 
 /**
