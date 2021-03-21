@@ -5,22 +5,7 @@ namespace Hypatia\Angle\Dms;
 use Hypatia\Angle\Dms as CDms;
 
 
-// TODO: should be in Hypatia\Angle\Deg
-function to_dms (float $deg): CDms
-{
-    $adeg = abs($deg);
 
-    $do = _compute_from_rest($adeg);
-    $mo = _compute_from_rest(end($do));
-    $s  = end($mo);
-
-    $dms = new CDms();
-    $dms->d = $deg < 0 ? -1 * reset($do) : reset($do);
-    $dms->m = reset($mo);
-    $dms->s = $s;
-
-    return $dms;
-}
 
 
 function to_string(CDms $dms, int $precision = 0): string
@@ -68,7 +53,7 @@ function to_geo(string $dms, string $type): string
 
 
 
-function _compute_from_rest(float $rest): array 
+function compute_from_rest(float $rest): array 
 {
     return (function ($i) use ($rest) {
         return [$i, ($rest - $i) * 60];
