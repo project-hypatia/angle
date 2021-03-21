@@ -19,10 +19,9 @@ class Deg extends Angle
         return new Turn(Deg\to_turn($this->value));
     }
 
-    // TODO
-    function toDms()
+    function toDms(): Dms
     {
-
+        return new Dms(...Deg\to_dms($this->value));
     }
 
     public function __toString(): string
