@@ -15,3 +15,10 @@ test('Call with value (-)270 should return true', function(){
     expect(Unary\is_right(270))->toBeTrue();
     expect(Unary\is_right(-270))->toBeTrue();
 });
+
+test('Call with value != (-)270 and != (-)90 should return false', function(){
+    expect(Unary\is_right(0))->toBeFalse();
+    expect(Unary\is_right(-20))->toBeFalse();
+    expect(Unary\is_right(-180))->toBeFalse();
+    expect(Unary\is_right(89))->toBeFalse();
+});
