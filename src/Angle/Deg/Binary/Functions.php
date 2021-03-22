@@ -2,6 +2,8 @@
 
 namespace Hypatia\Angle\Deg\Binary;
 
+use Hypatia\Angle\Deg\Unary;
+
 use Garp\Functional as f;
 
 function are_complementary(float $deg1, float $deg2 = null)
@@ -20,5 +22,5 @@ function are_suplementary(float $deg1, float $deg2 = null): bool
     )(...\func_get_args());
 }
 
-const are_complementary = '\Hypatia\Angle\Deg\are_complementary';
-const are_suplementary  = '\Hypatia\Angle\Deg\are_suplementary';
+const are_complementary = '\Hypatia\Angle\Deg\Binary\are_complementary';
+const are_suplementary  = '\Hypatia\Angle\Deg\Binary\are_suplementary';
