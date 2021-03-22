@@ -14,7 +14,7 @@ function are_complementary(float $deg1, float $deg2 = null)
     )(...\func_get_args());
 }
 
-function are_suplementary(float $deg1, float $deg2 = null): bool
+function are_suplementary(float $deg1, float $deg2 = null)
 {
     return f\autocurry(
         fn($deg1, $deg2) => Unary\is_straight($deg1 + $deg2),
